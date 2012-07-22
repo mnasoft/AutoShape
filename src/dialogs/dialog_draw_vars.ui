@@ -1,0 +1,1112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogDrawVars</class>
+ <widget class="QDialog" name="DialogDrawVars">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>458</width>
+    <height>460</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="pButton_color_pen_up">
+         <property name="text">
+          <string>Color</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGraphicsView" name="grView_color_pen_up">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spBox_width_pen_up">
+         <property name="maximum">
+          <number>16</number>
+         </property>
+         <property name="value">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_pen_up">
+         <property name="text">
+          <string>Pen up</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="pButton_color_pen_down">
+         <property name="text">
+          <string>Color</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGraphicsView" name="grView_color_pen_down">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spBox_width_pen_down">
+         <property name="maximum">
+          <number>16</number>
+         </property>
+         <property name="value">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_pen_down">
+         <property name="text">
+          <string>Pen down</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QPushButton" name="pButton_color_12">
+         <property name="text">
+          <string>Color</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGraphicsView" name="grView_color_12">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spBox_width_12">
+         <property name="maximum">
+          <number>16</number>
+         </property>
+         <property name="value">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>Pen up/down sign</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QPushButton" name="pButton_color_34">
+         <property name="text">
+          <string>Color</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGraphicsView" name="grView_color_34">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spBox_width_34">
+         <property name="maximum">
+          <number>16</number>
+         </property>
+         <property name="value">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_34">
+         <property name="text">
+          <string>Scale up/down sign</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QPushButton" name="pButton_color_56">
+         <property name="text">
+          <string>Color</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGraphicsView" name="grView_color_56">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spBox_width_56">
+         <property name="maximum">
+          <number>16</number>
+         </property>
+         <property name="value">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_56">
+         <property name="text">
+          <string>Slack push/pop sign</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QPushButton" name="pButton_color_7">
+         <property name="text">
+          <string>Color</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGraphicsView" name="grView_color_7">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spBox_width_7">
+         <property name="maximum">
+          <number>16</number>
+         </property>
+         <property name="value">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>Reference</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <widget class="QPushButton" name="pButton_color_cur">
+         <property name="text">
+          <string>Color</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGraphicsView" name="grView_color_cur">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spBox_width_cur">
+         <property name="maximum">
+          <number>16</number>
+         </property>
+         <property name="value">
+          <number>2</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_cur">
+         <property name="text">
+          <string>Current</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_7">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <item>
+        <widget class="QPushButton" name="pButton_color_9d">
+         <property name="text">
+          <string>Color</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGraphicsView" name="grView_color_9d">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spBox_width_9d">
+         <property name="maximum">
+          <number>16</number>
+         </property>
+         <property name="value">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_cur_2">
+         <property name="text">
+          <string>Multiform</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_8">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_9">
+       <item>
+        <widget class="QPushButton" name="pButton_color_e">
+         <property name="text">
+          <string>Color</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGraphicsView" name="grView_color_e">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>24</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spBox_width_e">
+         <property name="maximum">
+          <number>16</number>
+         </property>
+         <property name="value">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_e">
+         <property name="text">
+          <string>Vertical sign</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_9">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_12">
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Net ver [x_min, y_min, width,hight]</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spBox_net_ver_x_min"/>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spBox_net_ver_y_min"/>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spBox_net_ver_width"/>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spBox_net_ver_hight"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_11">
+       <property name="leftMargin">
+        <number>3</number>
+       </property>
+       <property name="topMargin">
+        <number>3</number>
+       </property>
+       <property name="rightMargin">
+        <number>2</number>
+       </property>
+       <property name="bottomMargin">
+        <number>3</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Net hor [x_min, y_min, width,hight]</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spBox_net_x_min"/>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spBox_net_y_min"/>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spBox_net_width"/>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spBox_net_hight"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_13">
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QCheckBox" name="chBox_drawHorisontal">
+         <property name="text">
+          <string extracomment="Рисовать тест как горизонтальный">Draw as horisontal</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="chBox_drawAll">
+         <property name="text">
+          <string comment="Выполнять отрисовку всех подформ" extracomment="Выполнять отрисовку всех подформ">Draw All</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="chBox_drawNet">
+         <property name="text">
+          <string extracomment="Рисовать вспомогательную сетку">Draw Net</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_10">
+     <item>
+      <widget class="QPushButton" name="pButton_Defaults">
+       <property name="text">
+        <string>Defaults</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_Save">
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="standardButtons">
+        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>pButton_color_pen_up</tabstop>
+  <tabstop>pButton_color_pen_down</tabstop>
+  <tabstop>pButton_color_12</tabstop>
+  <tabstop>pButton_color_34</tabstop>
+  <tabstop>pButton_color_56</tabstop>
+  <tabstop>pButton_color_7</tabstop>
+  <tabstop>pButton_color_cur</tabstop>
+  <tabstop>pButton_color_9d</tabstop>
+  <tabstop>pButton_color_e</tabstop>
+  <tabstop>spBox_width_pen_up</tabstop>
+  <tabstop>spBox_width_pen_down</tabstop>
+  <tabstop>spBox_width_12</tabstop>
+  <tabstop>spBox_width_34</tabstop>
+  <tabstop>spBox_width_56</tabstop>
+  <tabstop>spBox_width_7</tabstop>
+  <tabstop>spBox_width_cur</tabstop>
+  <tabstop>spBox_width_9d</tabstop>
+  <tabstop>spBox_width_e</tabstop>
+  <tabstop>spBox_net_ver_x_min</tabstop>
+  <tabstop>spBox_net_ver_y_min</tabstop>
+  <tabstop>spBox_net_ver_width</tabstop>
+  <tabstop>spBox_net_ver_hight</tabstop>
+  <tabstop>spBox_net_x_min</tabstop>
+  <tabstop>spBox_net_y_min</tabstop>
+  <tabstop>spBox_net_width</tabstop>
+  <tabstop>spBox_net_hight</tabstop>
+  <tabstop>chBox_drawHorisontal</tabstop>
+  <tabstop>chBox_drawAll</tabstop>
+  <tabstop>chBox_drawNet</tabstop>
+  <tabstop>pButton_Defaults</tabstop>
+  <tabstop>pushButton_Save</tabstop>
+  <tabstop>buttonBox</tabstop>
+  <tabstop>grView_color_pen_up</tabstop>
+  <tabstop>grView_color_pen_down</tabstop>
+  <tabstop>grView_color_12</tabstop>
+  <tabstop>grView_color_34</tabstop>
+  <tabstop>grView_color_56</tabstop>
+  <tabstop>grView_color_7</tabstop>
+  <tabstop>grView_color_cur</tabstop>
+  <tabstop>grView_color_9d</tabstop>
+  <tabstop>grView_color_e</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>377</x>
+     <y>321</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>331</x>
+     <y>287</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>377</x>
+     <y>321</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>338</x>
+     <y>325</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pButton_color_pen_up</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>pB_color_pen_up_pressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>23</x>
+     <y>26</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>164</x>
+     <y>57</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pButton_color_pen_down</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>pB_color_pen_down_pressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>47</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>163</x>
+     <y>80</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pButton_color_12</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>pB_color_12_pressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>71</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>163</x>
+     <y>115</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pButton_color_34</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>pB_color_34_pressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>25</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>168</x>
+     <y>153</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pButton_color_56</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>pB_color_56_pressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>46</x>
+     <y>160</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>169</x>
+     <y>188</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pButton_color_7</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>pB_color_7_pressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>72</x>
+     <y>196</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>168</x>
+     <y>226</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pButton_color_cur</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>pB_color_cur_pressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>34</x>
+     <y>229</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>169</x>
+     <y>261</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pButton_color_9d</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>pB_color_9d_pressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>60</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>172</x>
+     <y>297</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pButton_color_e</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>pB_color_e_pressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>85</x>
+     <y>286</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>108</x>
+     <y>336</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spBox_width_pen_up</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>spB_width_pen_up_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>229</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>384</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spBox_width_pen_down</sender>
+   <signal>editingFinished()</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>spB_width_pen_down_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>232</x>
+     <y>64</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>382</x>
+     <y>66</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spBox_width_12</sender>
+   <signal>editingFinished()</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>spB_width_12_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>223</x>
+     <y>95</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>387</x>
+     <y>107</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spBox_width_34</sender>
+   <signal>editingFinished()</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>spB_width_34_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>227</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>387</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spBox_width_56</sender>
+   <signal>editingFinished()</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>spB_width_56_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>227</x>
+     <y>164</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>386</x>
+     <y>187</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spBox_width_7</sender>
+   <signal>editingFinished()</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>spB_width_7_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>252</x>
+     <y>194</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>387</x>
+     <y>223</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spBox_width_9d</sender>
+   <signal>editingFinished()</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>spB_width_9d_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>252</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>387</x>
+     <y>312</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spBox_width_cur</sender>
+   <signal>editingFinished()</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>spB_width_cur_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>252</x>
+     <y>231</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>387</x>
+     <y>265</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spBox_width_e</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>spB_width_e_changed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>252</x>
+     <y>288</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>387</x>
+     <y>343</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pButton_Defaults</sender>
+   <signal>pressed()</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>pB_Defaults_pressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>49</x>
+     <y>321</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>91</x>
+     <y>343</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Save</sender>
+   <signal>pressed()</signal>
+   <receiver>DialogDrawVars</receiver>
+   <slot>pB_Save_pressed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>138</x>
+     <y>321</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>132</x>
+     <y>343</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>pB_color_pen_up_pressed()</slot>
+  <slot>pB_color_pen_down_pressed()</slot>
+  <slot>pB_color_12_pressed()</slot>
+  <slot>pB_color_34_pressed()</slot>
+  <slot>pB_color_56_pressed()</slot>
+  <slot>pB_color_7_pressed()</slot>
+  <slot>pB_color_cur_pressed()</slot>
+  <slot>pB_color_9d_pressed()</slot>
+  <slot>pB_color_e_pressed()</slot>
+  <slot>spB_width_pen_up_changed()</slot>
+  <slot>spB_width_pen_down_changed()</slot>
+  <slot>spB_width_12_changed()</slot>
+  <slot>spB_width_34_changed()</slot>
+  <slot>spB_width_56_changed()</slot>
+  <slot>spB_width_7_changed()</slot>
+  <slot>spB_width_cur_changed()</slot>
+  <slot>spB_width_9d_changed()</slot>
+  <slot>spB_width_e_changed()</slot>
+  <slot>pB_Defaults_pressed()</slot>
+  <slot>pB_Save_pressed()</slot>
+ </slots>
+</ui>

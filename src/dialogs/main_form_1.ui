@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>626</width>
+    <height>588</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="PathStrokeRendererEx" name="pathStrokeRendererEx"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>626</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_Open"/>
+    <addaction name="action_Save"/>
+    <addaction name="actionSave_as"/>
+    <addaction name="actionC_lose"/>
+    <addaction name="actionE_xit"/>
+   </widget>
+   <widget class="QMenu" name="menuFon_t">
+    <property name="title">
+     <string>Fon&amp;t</string>
+    </property>
+    <addaction name="action_Header"/>
+    <addaction name="actionDraw_Vars"/>
+   </widget>
+   <widget class="QMenu" name="menuFor_ms">
+    <property name="title">
+     <string>For&amp;ms</string>
+    </property>
+    <addaction name="action_Header_2"/>
+    <addaction name="action_Edit"/>
+    <addaction name="separator"/>
+    <addaction name="action_Prev"/>
+    <addaction name="action_Next"/>
+    <addaction name="action_Start"/>
+    <addaction name="actionEnd"/>
+    <addaction name="separator"/>
+    <addaction name="actionFind"/>
+    <addaction name="separator"/>
+    <addaction name="actionAdd_after"/>
+    <addaction name="actionAdd_before"/>
+    <addaction name="separator"/>
+    <addaction name="action_Delete"/>
+   </widget>
+   <widget class="QMenu" name="menuF_orma">
+    <property name="title">
+     <string>F&amp;orma</string>
+    </property>
+    <addaction name="actionEdit"/>
+    <addaction name="separator"/>
+    <addaction name="actionPrev"/>
+    <addaction name="actionNext"/>
+    <addaction name="actionStart"/>
+    <addaction name="actionEnd_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionAdd_past"/>
+    <addaction name="actionAdd_before_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionDelete"/>
+    <addaction name="actionBackspace"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menuFon_t"/>
+   <addaction name="menuFor_ms"/>
+   <addaction name="menuF_orma"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Open">
+   <property name="text">
+    <string>&amp;Open</string>
+   </property>
+  </action>
+  <action name="action_Save">
+   <property name="text">
+    <string>&amp;Save</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="text">
+    <string>Save &amp;as</string>
+   </property>
+  </action>
+  <action name="actionC_lose">
+   <property name="text">
+    <string>C&amp;lose</string>
+   </property>
+  </action>
+  <action name="actionE_xit">
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+  </action>
+  <action name="action_Header">
+   <property name="text">
+    <string>&amp;Header...</string>
+   </property>
+  </action>
+  <action name="actionDraw_Vars">
+   <property name="text">
+    <string>Draw &amp;Vars...</string>
+   </property>
+  </action>
+  <action name="action_Header_2">
+   <property name="text">
+    <string>&amp;Header</string>
+   </property>
+  </action>
+  <action name="action_Edit">
+   <property name="text">
+    <string>&amp;Edit</string>
+   </property>
+  </action>
+  <action name="action_Prev">
+   <property name="text">
+    <string>&amp;Prev</string>
+   </property>
+  </action>
+  <action name="action_Next">
+   <property name="text">
+    <string>&amp;Next</string>
+   </property>
+  </action>
+  <action name="action_Start">
+   <property name="text">
+    <string>&amp;Start</string>
+   </property>
+  </action>
+  <action name="actionEnd">
+   <property name="text">
+    <string>En&amp;d</string>
+   </property>
+  </action>
+  <action name="actionFind">
+   <property name="text">
+    <string>F&amp;ind...</string>
+   </property>
+  </action>
+  <action name="actionAdd_after">
+   <property name="text">
+    <string>&amp;Add after</string>
+   </property>
+  </action>
+  <action name="actionAdd_before">
+   <property name="text">
+    <string>Add &amp;before</string>
+   </property>
+  </action>
+  <action name="action_Delete">
+   <property name="text">
+    <string>&amp;Delete...</string>
+   </property>
+  </action>
+  <action name="actionEdit">
+   <property name="text">
+    <string>Edit</string>
+   </property>
+  </action>
+  <action name="actionPrev">
+   <property name="text">
+    <string>Prev</string>
+   </property>
+  </action>
+  <action name="actionNext">
+   <property name="text">
+    <string>Next</string>
+   </property>
+  </action>
+  <action name="actionStart">
+   <property name="text">
+    <string>Start</string>
+   </property>
+  </action>
+  <action name="actionEnd_2">
+   <property name="text">
+    <string>End</string>
+   </property>
+  </action>
+  <action name="actionAdd_past">
+   <property name="text">
+    <string>Add past</string>
+   </property>
+  </action>
+  <action name="actionAdd_before_2">
+   <property name="text">
+    <string>Add before</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionBackspace">
+   <property name="text">
+    <string>Backspace</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PathStrokeRendererEx</class>
+   <extends>QWidget</extends>
+   <header>pathstroke.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

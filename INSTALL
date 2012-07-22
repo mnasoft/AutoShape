@@ -1,0 +1,41 @@
+Инструкция по установке программы AutoShape
+
+Зависимости программы:
+qt-4.7.4
+
+Порядок установки на ОС GNU-Linux:
+Зависимости:
+cmake-2.6
+unzip
+
+1) Перейдите в каталог содержащий архив с исходным кодом программы AutoShape-0.2-src.zip:
+    cd path_to_AutoShape-0.2-src.zip
+2) Распакуйте:
+    unzip AutoShape-0.2-src.zip -d  AutoShape
+3) Перейдите в каталог распаковки
+    cd AutoShape
+4) Создайте каталог build:
+    mkdir build
+5) Перейдите в каталог build:
+    cd build
+6) Выполните конфигурирование:
+    cmake ../
+7) Выполните сборку:
+    make
+8) Выполните установку:
+    su -c "make install"
+    
+
+AShape_path=`find . -name AutoShape-0.2-src.zip | xargs dirname`
+cd $AShape_path
+unzip AutoShape-0.2-src.zip -d  AutoShape
+cd AutoShape
+mkdir build
+cd build
+cmake ../
+make
+su -c "make install"
+
+
+Порядок установки на MS-Windows:
+Пока не ясно.

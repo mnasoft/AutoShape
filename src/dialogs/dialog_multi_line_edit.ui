@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogMultiLineEdit</class>
+ <widget class="QDialog" name="DialogMultiLineEdit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>341</width>
+    <height>245</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="rowCount">
+      <number>1</number>
+     </property>
+     <property name="columnCount">
+      <number>2</number>
+     </property>
+     <row/>
+     <column>
+      <property name="text">
+       <string>dx</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>dy</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pb_Insert_Before">
+       <property name="text">
+        <string>Insert &amp;Before</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="pb_Insert_Next">
+       <property name="text">
+        <string>Insert &amp;Next</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="pb_Delete">
+       <property name="text">
+        <string>&amp;Delete</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DialogMultiLineEdit</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>168</x>
+     <y>220</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>225</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DialogMultiLineEdit</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>168</x>
+     <y>220</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>225</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_Delete</sender>
+   <signal>pressed()</signal>
+   <receiver>DialogMultiLineEdit</receiver>
+   <slot>delete_pushed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>247</x>
+     <y>69</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>255</x>
+     <y>97</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_Insert_Next</sender>
+   <signal>pressed()</signal>
+   <receiver>DialogMultiLineEdit</receiver>
+   <slot>insert_next_pushed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>241</x>
+     <y>38</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>254</x>
+     <y>129</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_Insert_Before</sender>
+   <signal>pressed()</signal>
+   <receiver>DialogMultiLineEdit</receiver>
+   <slot>insert_before_pushed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>335</x>
+     <y>18</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>253</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableWidget</sender>
+   <signal>currentCellChanged(int,int,int,int)</signal>
+   <receiver>DialogMultiLineEdit</receiver>
+   <slot>cell_was_changed(int,int,int,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>91</x>
+     <y>38</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>delete_pushed()</slot>
+  <slot>insert_before_pushed()</slot>
+  <slot>insert_next_pushed()</slot>
+  <slot>cell_was_changed(int,int,int,int)</slot>
+ </slots>
+</ui>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogMultiArcEdit</class>
+ <widget class="QDialog" name="DialogMultiArcEdit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>447</width>
+    <height>249</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="rowCount">
+      <number>1</number>
+     </property>
+     <property name="columnCount">
+      <number>3</number>
+     </property>
+     <row>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>dx</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>dy</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>curvature</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="pb_Insert_Before">
+       <property name="text">
+        <string>Insert &amp;Before</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pb_Insert_Next">
+       <property name="text">
+        <string>Insert &amp;Next</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pb_Delete">
+       <property name="text">
+        <string>&amp;Delete</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DialogMultiArcEdit</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>252</x>
+     <y>244</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>248</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DialogMultiArcEdit</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>320</x>
+     <y>244</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>248</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_Insert_Before</sender>
+   <signal>pressed()</signal>
+   <receiver>DialogMultiArcEdit</receiver>
+   <slot>insert_before_pushed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>345</x>
+     <y>12</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>346</x>
+     <y>106</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_Insert_Next</sender>
+   <signal>pressed()</signal>
+   <receiver>DialogMultiArcEdit</receiver>
+   <slot>insert_next_pushed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>351</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>352</x>
+     <y>141</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_Delete</sender>
+   <signal>pressed()</signal>
+   <receiver>DialogMultiArcEdit</receiver>
+   <slot>delete_pushed()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>363</x>
+     <y>74</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>365</x>
+     <y>178</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableWidget</sender>
+   <signal>currentCellChanged(int,int,int,int)</signal>
+   <receiver>DialogMultiArcEdit</receiver>
+   <slot>cell_was_changed(int,int,int,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>257</x>
+     <y>38</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>366</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>insert_before_pushed()</slot>
+  <slot>insert_next_pushed()</slot>
+  <slot>delete_pushed()</slot>
+  <slot>cell_was_changed(int,int,int,int)</slot>
+ </slots>
+</ui>
